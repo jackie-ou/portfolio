@@ -1,0 +1,133 @@
+@import url('https://fonts.cdnfonts.com/css/nunito-sans');
+
+.body {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background: #214ABE;
+  color: #FCFCFC;
+  font-family: 'Nunito Sans', sans-serif;
+}
+
+.header {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  width: 100%;
+  margin: 3.125em 0;
+}
+
+.headingWrapper {
+  display: flex;
+  flex-wrap: wrap;
+  margin-left: 1em;
+}
+
+.heading {
+  font-size: 3.75em;
+  font-weight: 700;
+  flex-shrink: 1;
+  max-width: 100%;
+  height: auto;
+  text-align: center;
+}
+
+.imageWrapper {
+  display: flex;
+  flex-wrap: wrap;
+  margin-right: 1em;
+}
+
+.picture {
+  font-size: 3.75em;
+  border-radius: 50%;
+  flex-shrink: 1;
+  max-width: 100%;
+  height: auto;
+}
+
+.card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: #183384;
+  min-height: 18.75em;
+  height: auto;
+  width: 100%;
+  text-align: center;
+}
+
+.sectionTitles {
+  text-align: center;
+  font-size: 2.25em;
+  font-weight: 600;
+  margin: 1.25em 4.375em;
+  max-width: 22.5em;
+  min-width: 10em;
+}
+
+.text {
+  font-size: 1em;
+  margin: 1.25em 4.375em;
+  margin-top: 0;
+  width: 80%;
+  text-align: left;
+}
+
+.aboutMe {
+  background: #183384;
+}
+
+.mySkills {
+  background: #214ABE;
+}
+
+.connectWithMe {
+  width: 100%;
+  background: #183384;
+  min-height: 0;
+}
+
+.connectWithMe h2{
+  width: 200px;
+  min-width: 8em;
+}
+
+.footerLinks {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  font-weight: 200;
+}
+
+.footerLinks div {
+  padding: 0 0.625em;
+  margin-bottom: 20px;
+}
+
+.linkContainer{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  font-size: 0.8em;
+}
+
+.icons{
+  font-size: 2.5em;
+}
+
+@media only screen and (min-width: 835px) {
+  .card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #183384;
+    min-height: 18.75em;
+    height: auto;
+    width: 100%;
+    text-align: left;
+    width: 31.25em;
+    border-radius: 1.25em;
+  }
+
+}
