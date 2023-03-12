@@ -11,18 +11,11 @@ export default function Home() {
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <link rel="icon" href="/favicon.ico" />
       </Head>
-      <header>
-        <nav>
-          {/* <NavBar /> */}
-        </nav>
-      </header>
       <main>
-        <Landing />
+        <Landing NavBar={<NavBar/>} />
       </main>
       <footer>
-        <nav>
-          {/* <NavBar /> */}
-        </nav>
+        <nav>{/* <NavBar /> */}</nav>
       </footer>
     </>
   );

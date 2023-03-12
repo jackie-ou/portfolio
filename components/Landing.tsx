@@ -1,11 +1,16 @@
+import React, { ReactNode } from 'react';
 import { Icon } from '@iconify/react';
 import styles from '@/styles/Landing.module.css';
 import Image from 'next/image';
 
-const Landing = () => {
+type Props = {
+  NavBar: ReactNode;
+};
+
+const Landing = ({ NavBar }: Props) => {
   return (
     <article className={styles.body}>
-      <button>Nav</button>
+      <header className={styles.navBar}>{NavBar}</header>
       <section className={styles.header}>
         <div className={styles.headingWrapper}>
           <h1 className={styles.heading}>Hi! I’m Jackie.</h1>

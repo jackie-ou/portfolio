@@ -1,8 +1,8 @@
 import Head from 'next/head';
-import { Grid } from '@/components/Grid';
 import { NavBar } from '@/components/NavBar';
+import { Project } from '@/components/Project';
 
-export default function Home() {
+export default function Projects() {
   return (
     <>
       <Head>
@@ -12,7 +12,7 @@ export default function Home() {
         <link rel="icon" href="/favicon.ico" />
       </Head>
       <main>
-        <Grid />
+        <Project NavBar={<NavBar/>}/>
       </main>
     </>
   );
