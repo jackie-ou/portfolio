@@ -11,8 +11,10 @@ export default function Menu() {
         <Link href={'/projects'} className={styles.link}>
           Projects
         </Link>
-        <Link href={'https://github.com/jackie-ou/portfolio/issues'} className={styles.link}>
-          Resume
+        <Link legacyBehavior href={'../Resume.pdf'} className={styles.link}>
+          <a target="_blank" rel="noopener noreferrer" className={styles.link}>
+            Resume
+          </a>
         </Link>
       </div>
     </div>
