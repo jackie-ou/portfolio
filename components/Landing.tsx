@@ -7,6 +7,23 @@ type Props = {
   NavBar: ReactNode;
 };
 
+type CardProps = {
+  sectionClass: string;
+  h2Content: string;
+  pContent: string;
+};
+
+const Card = ({ sectionClass, h2Content, pContent }: CardProps) => {
+  return (
+    <section className={`${sectionClass} ${styles.card}`}>
+      <h2 className={styles.sectionTitles}>{h2Content}</h2>
+      <p className={styles.text}>{pContent}</p>
+    </section>
+  );
+};
+
+export { Card };
+
 const Landing = ({ NavBar }: Props) => {
   return (
     <article className={styles.body}>
@@ -25,30 +42,28 @@ const Landing = ({ NavBar }: Props) => {
           />
         </div>
       </section>
-      <section className={`${styles.aboutMe} ${styles.card}`}>
-        <h2 className={styles.sectionTitles}>About Me 📝</h2>
-        <p className={styles.text}>
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Inventore odio porro cumque iste
+      <Card
+        sectionClass={styles.aboutMe}
+        h2Content={'About Me 📝'}
+        pContent="Lorem ipsum dolor sit amet consectetur adipisicing elit. Inventore odio porro cumque iste
           quidem illo temporibus deleniti. Doloremque consequatur quis sint, porro rem saepe maiores
           ducimus id, vitae, expedita voluptatum? Lorem ipsum dolor, sit amet consectetur
           adipisicing elit. A ipsum consectetur incidunt facere maxime. Accusamus corporis nemo a!
           Temporibus, culpa beatae. Voluptas provident rem natus reiciendis tenetur nisi similique
-          fugiat!
-        </p>
-      </section>
-      <section className={`${styles.mySkills} ${styles.card}`}>
-        <h2 className={styles.sectionTitles}>Skills 💻</h2>
-        {/* TODO: Add icons or mansonry grid */}
-        <p className={styles.text}>
-          Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ad similique voluptatibus
-          expedita accusamus eum incidunt iste saepe quia autem culpa. Ducimus molestias cumque
-          deleniti harum est eius quia vitae perspiciatis! Lorem ipsum dolor sit amet consectetur
-          adipisicing elit. Asperiores aliquam officiis sunt earum ea quisquam odio saepe modi ipsa
-          nulla, cumque libero excepturi voluptatum vitae. Distinctio dolor voluptatibus optio
-          repellendus. Voluptas provident rem natus reiciendis tenetur nisi similique fugiat!
-          Voluptas provident rem natus reiciendis tenetur nisi similique fugiat!
-        </p>
-      </section>
+          fugiat!"
+      />
+      {/* TODO: Add icons or mansonry grid */}
+      <Card
+        sectionClass={styles.mySkills}
+        h2Content={'Skills 💻'}
+        pContent="Lorem ipsum dolor sit amet consectetur adipisicing elit. Inventore odio porro cumque iste
+          quidem illo temporibus deleniti. Doloremque consequatur quis sint, porro rem saepe maiores
+          ducimus id, vitae, expedita voluptatum? Lorem ipsum dolor, sit amet consectetur
+          adipisicing elit. A ipsum consectetur incidunt facere maxime. Accusamus corporis nemo a!
+          Temporibus, culpa beatae. Voluptas provident rem natus reiciendis tenetur nisi similique
+          fugiat! Temporibus, culpa beatae. Voluptas provident rem natus reiciendis tenetur nisi similique
+          fugiat!"
+      />
       <section className={`${styles.connectWithMe} ${styles.card}`}>
         <h2 className={styles.sectionTitles}>Connect With Me! 🌐</h2>
         <div className={styles.footerLinks}>

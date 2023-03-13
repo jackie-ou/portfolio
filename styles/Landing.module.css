@@ -85,9 +85,10 @@
 .connectWithMe {
   width: 100%;
   background: #183384;
+  /* border: 1px solid red; */
 }
 
-.connectWithMe h2{
+.connectWithMe h2 {
   width: 200px;
   min-width: 8em;
 }
@@ -104,14 +105,14 @@
   margin-bottom: 20px;
 }
 
-.linkContainer{
+.linkContainer {
   display: flex;
   flex-direction: column;
   align-items: center;
   font-size: 0.8em;
 }
 
-.icons{
+.icons {
   font-size: 2.5em;
 }
 

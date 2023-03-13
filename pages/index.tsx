@@ -12,7 +12,7 @@ export default function Home() {
         <link rel="icon" href="/favicon.ico" />
       </Head>
       <main>
-        <Landing NavBar={<NavBar/>} />
+        <Landing NavBar={<NavBar />} />
       </main>
       <footer>
         <nav>{/* <NavBar /> */}</nav>
