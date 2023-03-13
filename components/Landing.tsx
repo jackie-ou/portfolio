@@ -2,6 +2,7 @@ import React, { ReactNode } from 'react';
 import { Icon } from '@iconify/react';
 import styles from '@/styles/Landing.module.css';
 import Image from 'next/image';
+import Link from 'next/link';
 
 type Props = {
   NavBar: ReactNode;
@@ -68,20 +69,36 @@ const Landing = ({ NavBar }: Props) => {
         <h2 className={styles.sectionTitles}>Connect With Me! 🌐</h2>
         <div className={styles.footerLinks}>
           <div className={styles.linkContainer}>
-            <Icon icon="mdi:business-card" color="#fcfcfc" className={styles.icons} />
-            Resume
+            <Link legacyBehavior href={'../Resume.pdf'}>
+              <a target="_blank" rel="noopener noreferrer" className={styles.link}>
+                <Icon icon="mdi:business-card" color="#fcfcfc" className={styles.icons} />
+                Resume
+              </a>
+            </Link>
           </div>
           <div className={styles.linkContainer}>
-            <Icon icon="uil:linkedin" className={styles.icons} />
-            LinkedIn
+            <Link legacyBehavior href={'https://www.linkedin.com/in/jackie-ou/'}>
+              <a target="_blank" rel="noopener noreferrer" className={styles.link}>
+                <Icon icon="uil:linkedin" className={styles.icons} />
+                LinkedIn
+              </a>
+            </Link>
           </div>
           <div className={styles.linkContainer}>
-            <Icon icon="mdi:github" color="#fcfcfc" className={styles.icons} />
-            Github
+            <Link legacyBehavior href={'https://github.com/jackie-ou'}>
+              <a target="_blank" rel="noopener noreferrer" className={styles.link}>
+                <Icon icon="mdi:github" color="#fcfcfc" className={styles.icons} />
+                Github
+              </a>
+            </Link>
           </div>
           <div className={styles.linkContainer}>
-            <Icon icon="mdi:email" color="#fcfcfc" className={styles.icons} />
-            Email
+            <Link legacyBehavior href={'mailto:jackiehgou@gmail.com'}>
+              <a target="_blank" rel="noopener noreferrer" className={styles.link}>
+                <Icon icon="mdi:email" color="#fcfcfc" className={styles.icons} />
+                Email
+              </a>
+            </Link>
           </div>
         </div>
       </section>
